@@ -1,59 +1,76 @@
 {
-    "name": "vscode-mlog",
-    "displayName": "Mindustry Logic",
-    "description": "Mindustry Logic (mlog) highlighting for VSCode!",
-    "version": "0.1.0",
-    "publisher": "Antyos",
-    "icon": "images/logo.png",
-    "license": "SEE LICENSE IN LICENSE",
-    "engines": {
-        "vscode": "^1.44.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "keywords": [
-        "mindustry",
-        "logic",
-        "mlog"
-    ],
-    "homepage": "https://github.com/Antyos/vscode-mlog/blob/main/README.md",
-    "bugs": {
-        "url": "https://github.com/Antyos/vscode-mlog/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Antyos/vscode-mlog"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "mlog",
-                "aliases": [
-                    "Mindustry Logic",
-                    "mindustry logic",
-                    "mlog"
-                ],
-                "extensions": [
-                    ".mlog"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "mlog",
-                "scopeName": "source.mlog",
-                "path": "./syntaxes/mlog.tmLanguage.json"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run update-grammar",
-        "update-grammar": "js-yaml syntaxes/mlog.YAML-tmLanguage > syntaxes/mlog.tmLanguage.json"
-    },
-    "devDependencies": {
-        "js-yaml": "^4.1.0"
-    },
-    "dependencies": {}
+	"name": "vscode-mlog-anen",
+	"displayName": "Mindustry Logic (Fork)",
+	"description": "Mindustry Logic (mlog) highlighting for VSCode!",
+	"version": "0.1.1",
+	"publisher": "Anen135",
+	"icon": "images/logo.png",
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "./src/extension.js",
+	"activationEvents": [
+		"onLanguage:mlog"
+	],
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"mindustry",
+		"logic",
+		"mlog"
+	],
+	"homepage": "https://github.com/Anen135/vscode-mlog/blob/main/README.md",
+	"bugs": {
+		"url": "https://github.com/Anen135/vscode-mlog/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Anen135/vscode-mlog"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "mlog",
+				"aliases": [
+					"Mindustry Logic",
+					"mindustry logic",
+					"mlog"
+				],
+				"extensions": [
+					".mlog"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "mlog",
+				"scopeName": "source.mlog",
+				"path": "./syntaxes/mlog.tmLanguage.json"
+			}
+		],
+		"themes": [
+			{
+			"label": "Mindustry Logic Theme",
+			"uiTheme": "vs-dark",
+			"path": "./themes/mlog-color-theme.json"
+			}
+		]
+
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run update-grammar",
+		"update-grammar": "js-yaml syntaxes/mlog.YAML-tmLanguage > syntaxes/mlog.tmLanguage.json"
+	},
+	"devDependencies": {
+		"js-yaml": "^4.1.0"
+	},
+	"dependencies": {},
+	"__metadata": {
+		"installedTimestamp": 1779191121023,
+		"targetPlatform": "undefined",
+		"size": 82604
+	}
 }

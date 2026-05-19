@@ -1,8 +1,30 @@
 # Changelog
 
+## [0.1.1] - (2026-05-19)
+
+### Forked / Changed
+- This release is a **community fork** of `Antyos/vscode-mlog`
+- Updated repository structure and metadata for fork compatibility
+- Fixed outdated VS Code engine requirement
+- Improved extension tags and marketplace metadata for discoverability
+
+### Added
+- Snippet-style completion support for key `mlog` instructions (e.g. `ulocate`)
+- Basic autocomplete provider groundwork for future context-aware suggestions
+- Extended built-in `@` completions (including `@firstItem`, `@time`, `@counter`, etc.)
+
+### Changed
+- Improved completion item categorization (commands vs builtins vs variables)
+- Refactored extension activation logic for easier future LSP migration
+
+### Fixed
+- `@firstItem` and similar sensor-like constants not appearing in completions
+- Minor inconsistencies in completion item types
+
+---
 ## [0.1.0] - (2021-08-20)
 
-Update `mlog` syntax to be compatible with Mindustry v7. Closes #3.
+Update `mlog` syntax to be compatible with Mindustry v7. Closes [#3](https://github.com/Antyos/vscode-mlog/issues/3).
 
 ### Added
 
